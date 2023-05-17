@@ -3,6 +3,9 @@ import boto3
 import time  
 import csv
 import io
+import boto3.s3.transfer 
+
+
 
 def reset_stream():
 
@@ -56,9 +59,11 @@ def write_csv_to_s3(bucket_name, key, header : tuple, gen):
     for row in gen:
         writer.writerow(row)
 
-    s3.put_object(
+    session = boto3.session.Session()
+    client = session.client
+    s3.put_object_acl(
         Bucket = bucket_name,  
-        Key = key,  
+        Key = key, 
         Body = buffer.getvalue()
     )
 
