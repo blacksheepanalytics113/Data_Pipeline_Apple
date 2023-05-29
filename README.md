@@ -19,11 +19,11 @@ The data is then processed and transformed using AWS services, queried through A
 7. Finally, A Superset dashboard is set up on an Amazon EC2 instance to display sleep analytics over the years.
 
 
-#Teck Stacks
-AWS Services : S3, Lambda, Glue, Athena, SNS, EC2
-Python Libraries : boto3, lxml, s3fs, awswrangler, pandas,Apache Superset
-Data Processing : Pandas
-Analytics and Visualization : Athena,Superset
+# Teck Stacks
+1. AWS Services : S3, Lambda, Glue, Athena, SNS, EC2
+2. Python Libraries : boto3, lxml, s3fs, awswrangler, pandas,Apache Superset
+3. Data Processing : Pandas
+4. Analytics and Visualization : Athena,Superset
 
 
 The above tech stack and an iCloud Account with Apple Health Data synced regularly from Apple Watch are required. If you don't have an account, you can download my [Health Dataset](C:\Users\AjiyeAdunoluwa\Downloads\apple_health_export (1))
