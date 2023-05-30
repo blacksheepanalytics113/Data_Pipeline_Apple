@@ -29,10 +29,12 @@ The data is then processed and transformed using AWS services, queried through A
 The above tech stack and an iCloud Account with Apple Health Data synced regularly from Apple Watch are required. If you don't have an account, you can download my [Health Dataset](C:\Users\AjiyeAdunoluwa\Downloads\apple_health_export (1))
 
 
-# Install Apache Superset
+# Install Apache Superset with Docker 
  1. Ensure that Docker is installed on your system. You can download and install Docker from the official [Docker website](https://www.docker.com/get-started)
  2. Pull Superset Docker Image: Open a terminal or command prompt and execute the following command to pull the Superset Docker image:
     <b>docker pull apache/superset</b>
  3. Run Superset Container: Once the image is downloaded, run the Superset container using the following command:
+   <b>docker run -d --name superset -p 8088:8088 apache/superset</b>
+ 4. Access Superset Web UI: Open a web browser and visit http://localhost:8088. This will take you to the Superset web user interface.
   
 
