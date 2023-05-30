@@ -30,4 +30,9 @@ The above tech stack and an iCloud Account with Apple Health Data synced regular
 
 
 # Install Apache Superset
- Ensure that Docker is installed on your system. You can download and install Docker from the official [Docker website](https://www.docker.com/get-started)
+ 1. Ensure that Docker is installed on your system. You can download and install Docker from the official [Docker website](https://www.docker.com/get-started)
+ 2. Pull Superset Docker Image: Open a terminal or command prompt and execute the following command to pull the Superset Docker image:
+    <b>docker pull apache/superset</b>
+ 3. Run Superset Container: Once the image is downloaded, run the Superset container using the following command:
+  
+
