@@ -16,5 +16,14 @@ The data is then processed and transformed using AWS services, queried through A
 4. Set up another AWS Lambda function to further transform the data using DuckDB and Pandas.
 5. The data is then redirected to a Lambda Function, which saves the data as Parquet files in an S3 Bucket, partitioned by year.
 6. Set up AWS Glue Crawlers to crawl the Parquet files stored in the S3 bucket and store the data in the AWS Glue Data Catalog table, partitioned by year.
-7. Finally, A Streamlit dashboard is set up on an Amazon EC2 instance to display sleep analytics over the years.
+7. Finally, A Superset dashboard is set up on an Amazon EC2 instance to display sleep analytics over the years.
 
+
+# Teck Stacks
+1. AWS Services : S3, Lambda, Glue, Athena, SNS, EC2
+2. Python Libraries : boto3, lxml, s3fs, awswrangler, pandas,Apache Superset
+3. Data Processing : Pandas
+4. Analytics and Visualization : Athena,Superset
+
+
+The above tech stack and an iCloud Account with Apple Health Data synced regularly from Apple Watch are required. If you don't have an account, you can download my [Health Dataset](C:\Users\AjiyeAdunoluwa\Downloads\apple_health_export (1))
